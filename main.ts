@@ -9,7 +9,7 @@ namespace IRdetector {
 
     export function IRdetection(pin: DigitalPin): boolean {
         if (pins.digitalReadPin(pin) == 0)
-            return true;
-        else return false;
+            return false;
+        else return true;
     }
 }
